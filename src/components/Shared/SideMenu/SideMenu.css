@@ -1,0 +1,22 @@
+.sideMenuDiv{
+    color:white ;
+    background-color: rgb(113, 186, 88);
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+.sideMenuLi{
+    color:black;
+    list-style-type: none;
+    background-color: rgb(246, 246, 246);
+}
+.sideMenuLink{
+    color: rgb(53, 59, 54);
+}
+
+.sideMenuLink:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}

@@ -1,0 +1,34 @@
+.footerContainer{
+    position: relative;
+    min-height: 70vh;
+}
+
+.footerChild{
+    background-color: rgba(51,51,51,0.98);
+    height: 380px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(246, 245, 245);
+}
+.upperSection{
+    height: 310px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.lowerSection{
+    background-color: rgba(44,44,44,0.98);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .upperSection{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0;
+        height: auto;
+        bottom: 0;
+        background-color: rgba(51,51,51,0.98);
+    }
+    }

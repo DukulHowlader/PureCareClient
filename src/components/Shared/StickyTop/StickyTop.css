@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Display&display=swap');
+.headerTextStyle{
+   color: rgb(113, 186, 88);
+   font-family: 'Anton', sans-serif;
+}
+.btnPosition{
+    position: relative;
+}
+.btnPositionStyle{
+    border: none;
+    background:none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/*  */
+.btn2{
+    color: rgb(113, 186, 88);
+  }
+  
+.btn2:hover{
+    color: #fff;
+  }
+  
+  .btnPositionStyle::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(113, 186, 88);
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btn2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  
+.btn2:hover::before{
+    height: 180%;
+  }
+.input-text{
+  border-color: rgb(113, 186, 88) !important;
+}
+.input-text:focus {
+    border-color:rgb(113, 186, 88) !important;
+    box-shadow: none !important ;
+}
+
+.flex-item-left{
+  padding-left: 50px;
+}
+
+.flex-item-middle{
+  width: 50%;
+}
+.flex-item-right{
+margin-right: 50px;
+}
+.stickyMenuDesign{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid lightgray ;
+  border-right: 1px solid lightgray;
+}
+.sticky {
+  z-index: 100;
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  height: max-content;
+}​
+
+.stickySubMenuDesign{
+ background-color: transparent !important;
+}
+.stickyTopLink{
+  color: black;
+}
+.stickyTopLink:hover{
+  text-decoration:none;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-item-left{
+    padding-left: 0px;
+  }
+  .flex-item-right{
+    margin-right: 0px;
+  }
+  .flex-item-middle{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  }
+

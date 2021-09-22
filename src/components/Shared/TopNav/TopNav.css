@@ -1,0 +1,29 @@
+.topNavBg{
+    background-color: rgb(113, 186, 88);
+}
+.topNavLink{
+    font-weight: 500;
+    position: relative;
+}
+
+.topNavLink:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    -webkit-transition: transform 350ms;
+    transition:  transform 350ms;
+}
+
+.topNavLink:hover:after{
+    -webkit-transform:  translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+
+}

@@ -1,0 +1,65 @@
+.contactPageLayout{
+    display: grid;
+    grid-template-columns:.7fr 1.5fr;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.left{
+    border-right: 1px dotted rgb(133, 63, 63);
+}
+.cardDesign{
+    border-bottom: 3px solid rgb(113, 186, 88);
+    position: relative;
+    transition: 0.6s ease-in-out ;
+    
+}
+.cardDesign:hover{
+    border-bottom: 3px solid #d5c455;
+    transform: translateX(-15px);
+}
+
+.contactDiv{
+    margin-top: 100px;
+}
+
+.pageNameShow{
+    position: relative;
+    text-align: center;
+}
+.centeredPosition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centeredPos {
+    position: absolute;
+    font-size: 2vw;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@media only screen and (max-width: 800px) and ( min-width: 200px) {
+    .contactPageLayout{
+        grid-template-columns:1fr;
+    }
+    .cardDesign{
+       margin: auto;
+    }
+    .bodyDesign{
+        width: 75%;
+    }
+    .contactHeader{
+        font-size: 28px;
+    }
+    .centeredPos{
+        font-size: 4vw;
+        height: 30px;
+        margin-bottom: 5%;
+    }
+    .centeredPosition{
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,27 @@
+.productCardDesign{
+  margin: 20px;
+  box-shadow: 5px 5px 10px lightgray;
+  border-radius: 10px;
+  width: 70%;
+  height: 400px;
+  align-items: center;
+}
+.productPriceDesign{
+  border-radius: 20px;
+  background-color: rgb(113, 186, 88);
+  color: white;
+  margin-top: 20px;
+}
+.productNameDesign{
+  color: black;
+ transition: .2s;
+}
+.productNameDesign:hover{
+  text-decoration: none;
+  color: rgb(69, 129, 48);
+}
+.productImgStyle img{
+ width: 325px;
+ height: 220px;
+ border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+.aboutTextDesign{
+    font-size: 14px;
+    color: rgb(0, 8, 0);
+}
+
+.section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-heading{
+    color: black;
+    font-size: 32px;
+}
+
+ .underline{
+    height: 04px;
+    width: 4rem;
+    background-color: #f76c2f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.bg-c-light{
+    background-color: #f2f2f2;
+} 
