@@ -17,7 +17,7 @@ const StickyTop = (props) => {
     
 
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('https://immense-cliffs-46216.herokuapp.com/categories')
             .then(response => response.json())
             .then(data => {
                 setCategories(data);

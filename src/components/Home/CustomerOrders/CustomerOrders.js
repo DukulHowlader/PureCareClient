@@ -9,7 +9,7 @@ const CustomerOrders = () => {
     const [ordersView, setOrdersView] = useState([])
     const id = loggedInUser.CustomerEmail;
 
-    fetch(`http://localhost:5000/customerOrder/${id}`)
+    fetch(`https://immense-cliffs-46216.herokuapp.com/customerOrder/${id}`)
         .then(response => response.json())
         .then(data => {
             setOrdersView(data)

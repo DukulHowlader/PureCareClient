@@ -13,7 +13,7 @@ const Category = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/category/${subName}`)
+        fetch(`https://immense-cliffs-46216.herokuapp.com/category/${subName}`)
             .then(response => response.json())
             .then(data => setProducts(data))
     }, [subName])

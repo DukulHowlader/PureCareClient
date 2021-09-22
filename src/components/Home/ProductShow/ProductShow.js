@@ -16,19 +16,19 @@ const ProductShow = () => {
     const Third = 'Oils';
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${First}`)
+        fetch(`https://immense-cliffs-46216.herokuapp.com/products/${First}`)
             .then(response => response.json())
             .then(data => setFirstProductsDetails(data))
     }, [First])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${Second}`)
+        fetch(`https://immense-cliffs-46216.herokuapp.com/products/${Second}`)
             .then(response => response.json())
             .then(data => setSecondProductsDetails(data))
     }, [Second])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${Third}`)
+        fetch(`https://immense-cliffs-46216.herokuapp.com/products/${Third}`)
             .then(response => response.json())
             .then(data => setThirdProductsDetails(data))
     }, [Third])

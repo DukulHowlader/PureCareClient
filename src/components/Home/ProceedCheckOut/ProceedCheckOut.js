@@ -70,7 +70,7 @@ const ProceedCheckOut = () => {
             date: new Date().toLocaleString("en-US", { day: '2-digit', month: "2-digit", year: "2-digit" })
 
         }
-        fetch('http://localhost:5000/createOrder', {
+        fetch('https://immense-cliffs-46216.herokuapp.com/createOrder', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

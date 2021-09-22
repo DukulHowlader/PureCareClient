@@ -26,7 +26,7 @@ const Login = () => {
             CustomerPass: data.CustomerPassword,
 
         }
-        fetch('http://localhost:5000/addUser', {
+        fetch('https://immense-cliffs-46216.herokuapp.com/addUser', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -84,7 +84,7 @@ const Login = () => {
             loginEmail: loginEmail,
             loginPassword: loginPassword
         }
-        fetch('http://localhost:5000/loginUser', {
+        fetch('https://immense-cliffs-46216.herokuapp.com/loginUser', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
