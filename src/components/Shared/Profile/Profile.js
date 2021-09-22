@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {useContext} from 'react'
 import { userContext } from '../../../App';
 const Profile = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(userContext)
+    const [loggedInUser ] = useContext(userContext)
     return (
        <div>
             Name: {loggedInUser.CustomerName}          

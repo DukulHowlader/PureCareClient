@@ -1,6 +1,6 @@
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect } from 'react';
 import StickyTop from '../../Shared/StickyTop/StickyTop';
 import TopNav from '../../Shared/TopNav/TopNav';
 import common from '../../../Images/common.jpg';
@@ -8,6 +8,9 @@ import Footer from '../../Shared/Footer/Footer';
 import './About.css';
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <TopNav></TopNav>

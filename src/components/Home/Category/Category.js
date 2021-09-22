@@ -10,13 +10,16 @@ import './Category.css';
 
 const Category = () => {
     const { subName } = useParams();
-
     const [products, setProducts] = useState([]);
     useEffect(() => {
         fetch(`https://immense-cliffs-46216.herokuapp.com/category/${subName}`)
             .then(response => response.json())
             .then(data => setProducts(data))
     }, [subName])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>

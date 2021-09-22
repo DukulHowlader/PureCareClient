@@ -7,7 +7,7 @@ import {faSignOutAlt, faUser} from '@fortawesome/free-solid-svg-icons';
 import { faListAlt } from '@fortawesome/free-regular-svg-icons';
 
 const TopNav = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(userContext);
+    const [loggedInUser] = useContext(userContext);
     const logOutHandle = () => {
         localStorage.removeItem('loggedInUser');
         window.location.reload(false)

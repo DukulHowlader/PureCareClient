@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useReducer, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import StickyTop from '../../Shared/StickyTop/StickyTop';
 import TopNav from '../../Shared/TopNav/TopNav';
 import { userContext } from '../../../App'
@@ -13,7 +13,7 @@ const ProceedCheckOut = () => {
     let i = 1;
     let history = useHistory();
     const [products, setProducts] = useState([]);
-    const [loggedInUser, setLoggedInUser] = useContext(userContext)
+    const [loggedInUser] = useContext(userContext)
     const [deliveryCharge, setDeliveryCharge] = useState(60);
     const details = localStorage.getItem('addedProducts');
 
@@ -56,7 +56,7 @@ const ProceedCheckOut = () => {
 
 
     }
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit} = useForm();
     const onSubmit = data => {
         const orderData = {
             CustomerName: loggedInUser.CustomerName,

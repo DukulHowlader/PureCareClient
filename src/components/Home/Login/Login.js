@@ -16,7 +16,7 @@ const Login = () => {
     const location = useLocation();
     let {form} = location.sate || {form : {pathname:"/"}};
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         const CustomerData = {
             CustomerName: data.CustomerName,
@@ -110,7 +110,10 @@ const Login = () => {
     useEffect(() => {
         localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
       }, [loggedInUser]);
-
+     
+      useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <TopNav></TopNav>

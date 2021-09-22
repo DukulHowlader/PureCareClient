@@ -1,5 +1,5 @@
-import { faFacebook, faGoogle, faInstagram, faMailchimp } from '@fortawesome/free-brands-svg-icons';
-import { faAddressBook, faChevronRight, faEnvelope, faInfo, faMailBulk, faMapMarkedAlt, faMapPin, faPhoneAlt, faUserAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGoogle, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faAddressBook, faChevronRight, faEnvelope, faInfo, faMapMarkedAlt, faMapPin, faPhoneAlt, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';

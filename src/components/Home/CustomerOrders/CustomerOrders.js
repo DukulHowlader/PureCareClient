@@ -5,7 +5,7 @@ import StickyTop from '../../Shared/StickyTop/StickyTop';
 import TopNav from '../../Shared/TopNav/TopNav';
 
 const CustomerOrders = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(userContext);
+    const [loggedInUser] = useContext(userContext);
     const [ordersView, setOrdersView] = useState([])
     const id = loggedInUser.CustomerEmail;
 

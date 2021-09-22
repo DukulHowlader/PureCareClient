@@ -8,14 +8,13 @@ import { useParams } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
 import StickyTop from '../../Shared/StickyTop/StickyTop';
 import TopNav from '../../Shared/TopNav/TopNav';
-import { Link } from 'react-router-dom';
 import './Product.css';
 
 const Product = () => {
     const { id } = useParams();
     const [product, setProduct] = useState({});
     const [disable, setDisable] = useState(false);
-    const [addedProduct, setAddedProduct] = useState({});
+    const [addedProduct] = useState({});
 
     useEffect(() => {
         fetch(`https://immense-cliffs-46216.herokuapp.com/product/${id}`)
